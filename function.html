@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <div class="form-group">
+      <label for=""></label>
+      <input type="text"
+        class="form-control" name="" id="inp" aria-describedby="helpId" placeholder="">
+    </div>
+    <button onclick="sub()">Submit</button>
+
+    <div class="out">
+
+    </div>
+
+    <script type="text/javaScript">
+        function sub() {
+            var input = document.getElementById("inp").value;
+            var output = "<h1>" + "Hello " + input + "</h1>";
+            document.getElementsByClassName("out")[0].innerHTML = output;
+        }
+
+    </script>
+</body>
+</html>
